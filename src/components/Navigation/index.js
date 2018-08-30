@@ -6,25 +6,21 @@ import './styles.css'
 const Navigation = props => (
   <nav className="Navigation">
     <Logo className="Logo" />
+
     <ol className="NavigationList">
-      <div>
+      <li className="NavigationItem">
         <NavLink exact to="/" className="NavigationLink">
-          <li className="NavigationItem">
-            <span>Home</span>
-          </li>
+          <span>Home</span>
         </NavLink>
-      </div>
+      </li>
 
       {props.pages.map(page => (
-        <div key={page.title}>
+        <li key={page.title} className="NavigationItem">
           <NavLink to={page.url} className="NavigationLink">
-            <li className="NavigationItem">
-              <span>{page.title}</span>
-            </li>
+            <span>{page.title}</span>
           </NavLink>
-        </div>
-    ))}
-
+        </li>
+      ))}
     </ol>
   </nav>
 )

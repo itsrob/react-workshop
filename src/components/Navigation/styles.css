@@ -43,8 +43,29 @@
   .Navigation {
     width: 80px;
     padding: 1em;
+    counter-reset: nav;
   }
-  .NavigationLink > li > span {
+
+  .NavigationItem {
+    position: relative;
+    counter-increment: nav;
+    list-style-type: none;
+  }
+
+  .NavigationLink {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .NavigationLink::before {
+    content: counter(nav) '.';
+  }
+
+  .NavigationLink.active {
+    color: rgb(52, 183, 188);
+  }
+
+  .NavigationLink span {
     border: 0 !important;
     clip: rect(1px, 1px, 1px, 1px) !important;
     -webkit-clip-path: inset(50%) !important;
