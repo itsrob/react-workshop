@@ -5,11 +5,11 @@ class Timer extends React.Component {
     super(props)
 
     this.state = {
-      seconds: 0
+      seconds: props.seconds ? props.seconds : 0
     }
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.timer = setInterval(this.increment, 1000)
   }
 

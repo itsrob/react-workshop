@@ -5,8 +5,9 @@ const INITIAL_STATE = {
 const reducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case 'ADD_MESSAGE':
-      // @TODO: actually update the state
-      return state
+      let newMessages = state.messages.slice();
+      newMessages.push(action.message)
+      return {...state, messages: newMessages}
 
     default:
       return state

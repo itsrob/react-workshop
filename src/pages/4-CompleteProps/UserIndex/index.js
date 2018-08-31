@@ -7,8 +7,8 @@ const users = [
     preferredName: 'Zhenya',
     email: 'jevgenija.zigisova@n26.com'
   },
-  { name: 'Michael', preferredName: 'Mike', email: 'mike.smart@n26.com' },
-  { name: 'Hugo', email: 'hugo.giraudel@n26.com' }
+  { name: 'Hugo', email: 'hugo.giraudel@n26.com',  countryCode: 'fr'},
+  { name: 'Robert', email: 'mail@robert-philipps.com', countryCode: 'de'}
 ]
 
 const UserIndex = () => (

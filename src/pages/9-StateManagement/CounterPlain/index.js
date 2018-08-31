@@ -1,6 +1,6 @@
 import React from 'react'
 
-const increment = state => ({ count: state.count + 1 })
+const increment = state => ({ count: state.count + 2 })
 const decrement = state => ({ count: state.count - 1 })
 
 class CounterPlain extends React.Component {
@@ -11,7 +11,7 @@ class CounterPlain extends React.Component {
       <div>
         <div>{this.state.count}</div>
         <button type="button" onClick={() => this.setState(increment)}>
-          +
+          +2
         </button>
         <button type="button" onClick={() => this.setState(decrement)}>
           -

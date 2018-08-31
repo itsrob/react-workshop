@@ -1,3 +1,6 @@
-export const addMessage = (message) => ({
-  // @TODO: fill this action
-})
+export const addMessage = (message) => (
+  {
+    type: 'ADD_MESSAGE',
+    message: message
+  }
+)

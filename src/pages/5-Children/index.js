@@ -51,7 +51,7 @@ const Page = props => (
     </p>
 
     <Example live>
-      <Title>Make me a link!</Title>
+      <Title><a href="google.com">Make me a link!</a></Title>
     </Example>
   </div>
 )

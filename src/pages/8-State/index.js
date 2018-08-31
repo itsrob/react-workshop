@@ -56,7 +56,7 @@ const Page = () => (
     </p>
 
     <Example>
-      <Timer />
+      <Timer/>
     </Example>
 
     <SectionTitle text="Before jumping in" />

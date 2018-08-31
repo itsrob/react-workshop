@@ -1,7 +1,9 @@
-export const incrementCounter = () => ({
-  type: 'INCREMENT'
+export const incrementCounter = (input) => (
+  {
+  type: 'INCREMENT',
+  input: input
 })
 
-export const decrementCounter = () => ({
-  type: 'DECREMENT'
+export const resetCounter = () => ({
+  type: 'RESET'
 })

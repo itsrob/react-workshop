@@ -1,6 +1,12 @@
 import React from 'react'
 
 class Logger extends React.Component {
+
+
+  componentDidMount(){
+    console.log('I AM MOUNTED')
+  }
+
   render() {
     return (
       <p>
